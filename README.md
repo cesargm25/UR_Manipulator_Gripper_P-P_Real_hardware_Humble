@@ -1,17 +1,17 @@
-Here's a complete `README.md` in English tailored for your ROS 2 Humble-based project repository:
 
+# UR3e + Robotiq 2F-140 + RealSense Integration on ROS 2 Humble
+
+> ⚠️ This repository is not yet a fully structured ROS 2 package — it is a collection of nodes, scripts, and configuration files meant for **integration and experimentation**.
 ---
 
 ````markdown
-# 🤖 UR3e + Robotiq 2F-140 + RealSense Integration on ROS 2 Humble
+
 
 This repository contains a **collection of ROS 2 Humble scripts and launch setups** to control a **UR3e robotic arm**, a **Robotiq 2F-140 gripper**, and a **RealSense camera**, intended for use with real hardware.
 
-> ⚠️ This repository is not yet a fully structured ROS 2 package — it is a collection of nodes, scripts, and configuration files meant for **integration and experimentation**.
-
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 This setup builds on the following open-source projects:
 
@@ -23,7 +23,7 @@ This setup builds on the following open-source projects:
 
 ---
 
-## 🛠️ Features
+## Features
 
 - ✅ **Send joint trajectories** to the UR3e via `/scaled_joint_trajectory_controller`.
 - ✅ **Control Robotiq 2F-140** gripper via ROS 2 services.
@@ -63,7 +63,7 @@ source install/setup.bash
 
 ---
 
-## 🤖 Running the System
+##  Running the System
 
 ### 1. Start the Robotiq Gripper Server
 
