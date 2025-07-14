@@ -2,7 +2,7 @@ import rclpy
 from rclpy.node import Node
 from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from builtin_interfaces.msg import Duration
-from ros2_robotiqgripper.srv import RobotiqGripper
+#from ros2_robotiqgripper.srv import RobotiqGripper
 
 class JointTrajectoryPublisher(Node):
     def __init__(self):
@@ -12,9 +12,9 @@ class JointTrajectoryPublisher(Node):
         self.timer = self.create_timer(timer_period, self.publish_trajectory)
 
     
-        self.cli = self.create_client(RobotiqGripper, '/Robotiq_Gripper')
-        while not self.cli.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info('Ha llegado hasta aqui...')
+        #self.cli = self.create_client(RobotiqGripper, '/Robotiq_Gripper')
+        #while not self.cli.wait_for_service(timeout_sec=1.0):
+        #    self.get_logger().info('Ha llegado hasta aqui...')
 
 
     def publish_trajectory(self):

@@ -1,0 +1,1 @@
+ros2 run ros2_robotiqgripper server.py --ros-args -p IPAddress:="192.168.1.102"
