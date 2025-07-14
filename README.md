@@ -83,10 +83,13 @@ Topics like /camera/color/image_raw will be available for perception modules.
 ```
 
 Structure
+
+```bash
 UR_Manipulator_Gripper_P-P_Real_hardware_Humble/
 │
 ├── joint_trajectory_publisher.py      # Sends joint trajectories and controls the gripper
 ├── README.md                          # You are here
 └── launch/                            # Optional launch files (in development)
+```
 
 
