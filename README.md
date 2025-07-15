@@ -35,10 +35,10 @@ This setup builds on the following open-source projects:
 
 ### 1. Clone and Setup Workspaces
 
-Clone the required dependencies into your ROS 2 workspace (`ws_moveit` or similar):
+Clone the required dependencies into your ROS 2 workspace (`arm_ws` or similar):
 
 ```bash
-cd ~/ws_moveit/src
+cd ~/arm_ws/src
 
 # Robotiq Gripper Driver
 git clone https://github.com/IFRA-Cranfield/ros2_RobotiqGripper -b humble
@@ -55,6 +55,11 @@ git clone https://github.com/IntelRealSense/realsense-ros.git
 
 ```bash
 ros2 run ros2_robotiqgripper server.py --ros-args -p IPAddress:="192.168.1.102"
+```
+and source the enviroment 
+
+```bash
+source install/setup.bash 
 ```
 
 2. Control the Gripper from a Python Node
